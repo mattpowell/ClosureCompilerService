@@ -1,11 +1,11 @@
 Readme
 =========
 
-ClosureCompilerService is a lightweight service that sits on top of Closure Compiler. It's designed to make the lookup of infrequently used files less expensive and the total compilation time of several files quicker (compared to running Closure Compiler via closurebuilder.py). It also has the advantage of having the flexibility to pass custom flags to the compiler whereas if you use the REST service provided by Google, you're pretty much stuck with the vanilla set of options.
+ClosureCompilerService is a lightweight service that sits on top of Closure Compiler. It's designed to make the lookup of infrequently changed files less expensive and the total compilation time of several files quicker (compared to running Closure Compiler via closurebuilder.py). It also has the advantage of having the flexibility to pass custom flags to the compiler whereas if you use the REST service provided by Google, you're pretty much stuck with the vanilla set of options.
 
 Features
 --------
-* It's quick, cuts compile time vs closurebuilder.py (or REST service) by 2-3x.
+* It's quick -- cuts compile time vs closurebuilder.py (or REST service) by 2-3x.
 * Can automatically cache Closure Library files
 * Makes accessible individual features of the compiler. E.g. you can specify SIMPLE_OPTIMZATIONS **and** dead code elimination!
 * Communication is done purely in JSON.
